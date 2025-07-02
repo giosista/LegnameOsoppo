@@ -3,7 +3,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Genera Email Outlook per i carichi legnami di Osoppo</title>
+  <title>Genera E-mail Outlook per i carichi legnami di Osoppo</title>
   <script>
     function generaEmail() {
       const oggi = new Date();
@@ -13,7 +13,7 @@
       const data = `${giorno}/${mese}/${anno}`;
 
       const destinatario = "m.dagostina@inter-railspa.it";
-      const cc = "Isabel.Gregori@lte-group.eu";
+      const cc = "isabel.gregori@lte-group.eu";
       const oggetto = encodeURIComponent("Documenti legno Osoppo");
       const corpo = encodeURIComponent(
         "Documenti commerciali del legname depositati nella cassetta in stazione a Osoppo. Data: " + data
@@ -37,7 +37,7 @@
   </style>
 </head>
 <body>
-  <h1>Invio email documenti legno Osoppo</h1>
+  <h1>Invio e-mail documenti legno Osoppo</h1>
   <p>Clicca il pulsante qui sotto per aprire Outlook con l'e-mail già compilata e la data odierna.</p>
   <button onclick="generaEmail()">Apri Outlook</button>
 </body>
